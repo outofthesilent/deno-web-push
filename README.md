@@ -8,7 +8,7 @@ import { sendWebPush } from "https://raw.githubusercontent.com/outofthesilent/de
 
 const result = await sendWebPush(
   subscription,                       // { endpoint, keys: { p256dh, auth } }
-  { title: "Lesson in 15 minutes", body: "Studio B with Ms. Rivera", url: "/today" },
+  { title: "Starting in 15 minutes", body: "Room 2 — see today's schedule", url: "/today" },
   { publicKey: VAPID_PUBLIC, privateKey: VAPID_PRIVATE, subject: "mailto:you@example.com" },
 );
 
